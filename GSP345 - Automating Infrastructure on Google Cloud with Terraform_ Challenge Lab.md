@@ -1,5 +1,8 @@
-............................
-TASK 1 #1: create Terraform configuration files
+# GSP345 - Automating Infrastructure on Google Cloud with Terraform_ Challenge Lab.md
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+## TASK 1
+
+01. Create Terraform configuration files, run in cloud shell
 ```
 touch main.tf
 touch variables.tf
@@ -19,8 +22,7 @@ touch variables.tf
 cd
 ```
 
-............................
-TASK 1 #2: Go To `variable.tf` and paste following content:
+02. Go to `variable.tf` and paste following content:
 ```
 variable "region" {
  default = "<FILL*YOUR*REGION*HERE>"
@@ -33,8 +35,7 @@ variable "project_id" {
 }
 ```
 
-............................
-TASK 1 #3: Add following to `main.tf`
+03. Add following to `main.tf`
 ```
 terraform {
   required_providers {
@@ -54,16 +55,16 @@ module "instances" {
 }
 ```
 
-............................
-TASK 1 #4: Run in cloudshell
+04. Run in cloud shell
 ```
 terraform init
 ```
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-............................
-TASK 2 #1: Go to `modules/instances/instances.tf` then paste following content
+## TASK 2
+
+01. Go to `modules/instances/instances.tf` then paste following content
 
 ```
 resource "google_compute_instance" "tf-instance-1" {
@@ -104,16 +105,22 @@ resource "google_compute_instance" "tf-instance-2" {
 }
 ```
 
-............................
-TASK 2 #2: Run in cloud shell
+02. Run in cloud shell
 
-`terraform import module.instances.google_compute_instance.tf-instance-1 <FILL*YOUR*INSTANCE_ID_#1*HERE>`
-`terraform import module.instances.google_compute_instance.tf-instance-2 <FILL*YOUR*INSTANCE_ID_#2*HERE>`
-`terraform plan && terraform apply`
+```
+terraform import module.instances.google_compute_instance.tf-instance-1 <FILL*YOUR*INSTANCE_ID_#1*HERE>
+```
+```
+terraform import module.instances.google_compute_instance.tf-instance-2 <FILL*YOUR*INSTANCE_ID_#2*HERE>
+```
+```
+terraform plan && terraform apply
+```
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-............................
-TASK 3 #1: Add following to `storage.tf`
+## TASK 3 
+
+01. Add following to `storage.tf`
 ```
 resource "google_storage_bucket" "storage-bucket" {
   name          = "<FILL*YOUR*BUCKET_NAME*HERE>"
@@ -123,21 +130,19 @@ resource "google_storage_bucket" "storage-bucket" {
 }
 ```
 
-............................
-TASK 3 #2: a. Add following to `main.tf`
+02. a. Add following to `main.tf`
 ```
 module "storage" {
   source     = "./modules/storage"
 }
 ```
 
-TASK 3 #2: b. Run cloud shell 
+02. b. Run in cloud shell 
 ```
 terraform init && terraform apply
 ```
 
-............................
-TASK 3 #3: Make change at start in `main.tf`
+03. Make change at start in `main.tf`
 ```
 terraform {
   backend "gcs" {
@@ -153,16 +158,15 @@ terraform {
 }
 ```
 
-............................
-TASK 3 #4: run in cloud shell
+04. Run in cloud shell
 ```
 terraform init
 ```
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-............................
-TASK 4 #1: Edit the machine type of "tf-instance-1" in `instance.tf`
+## TASK 4
+01. Edit the machine type of "tf-instance-1" in `instance.tf`
 ```
 resource "google_compute_instance" "tf-instance-1" {
   name         = "tf-instance-1"
@@ -170,8 +174,8 @@ resource "google_compute_instance" "tf-instance-1" {
   ... (rest of code)
 }
 ```
-............................
-TASK 4 #2: Edit the machine type of "tf-instance-2" in `instance.tf`
+
+02. Edit the machine type of "tf-instance-2" in `instance.tf`
 ```
 resource "google_compute_instance" "tf-instance-2" {
   name         = "tf-instance-2"
@@ -179,8 +183,8 @@ resource "google_compute_instance" "tf-instance-2" {
   ... (rest of code)
 }
 ```
-............................
-TASK 4 #3: Add following to `instance.tf`
+
+03. Add following to `instance.tf`
 ```
 resource "google_compute_instance" "<FILL*YOUR*INSTANCE_3_NAME*HERE>" {
   name         = "<FILL*YOUR*INSTANCE_3_NAME*HERE>"
@@ -203,27 +207,27 @@ resource "google_compute_instance" "<FILL*YOUR*INSTANCE_3_NAME*HERE>" {
 }
 ```
 
-............................
-TASK 4 #4: Run cloud shell
+04. Run in cloud shell
 ```
 terraform init && terraform apply
 ```
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-............................
-TASK 5 #1: Go to `instance.tf` & remove instance 3
+## TASK 5
 
-............................
-TASK 5 #2: Run cloud shell
+01. Go to `instance.tf` & remove instance 3
+
+02. Run in cloud shell
 ```
 terraform init && terraform apply
 ```
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-............................
-Task 6 #1-#2: Add following to `main.tf`
+## TASK 6
+
+1. & 2. Add following to `main.tf`
 ```
 module "vpc" {
     source  = "terraform-google-modules/network/google"
@@ -251,14 +255,12 @@ module "vpc" {
 }
 ```
 
-............................
-Task 6 #3: Run cloud shell
+03. Run in cloud shell
 ```
 terraform init && terraform apply
 ```
 
-............................
-Task 6 #4a: **Replace everything** in `Instance.tf` with following
+04. a. ***Replace everything*** in `Instance.tf` with following
 ```
 resource "google_compute_instance" "tf-instance-1"{
   name         = "tf-instance-1"
@@ -329,16 +331,16 @@ module "vpc" {
 }
 ```
 
-............................
-Task 6 #4b: run cloud shell 
+04. b. Run in cloud shell 
 ```
 terraform init && terraform apply
 ```
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
-............................
-Task 7 #1a: Add the following to `main.tf` 
+## TASK 7
+
+01. a. Add the following to `main.tf` 
 ```
 resource "google_compute_firewall" "tf-firewall"{
   name    = "tf-firewall"
@@ -354,9 +356,7 @@ resource "google_compute_firewall" "tf-firewall"{
 }
 ```
 
-............................
-
-Task 7 #1b: run cloud shell
+01. b. Run in cloud shell
 ```
 terraform init && terraform apply
 ```
