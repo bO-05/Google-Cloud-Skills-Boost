@@ -162,10 +162,28 @@ terraform init
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 ............................
-TASK 4 #1-#3: Add following to `instance.tf`
+TASK 4 #1: Edit the machine type of "tf-instance-1" in `instance.tf`
 ```
-resource "google_compute_instance" "<FILL*YOUR*INSTANCE_NAME*HERE>" {
-  name         = "<FILL*YOUR*INSTANCE_NAME*HERE>"
+resource "google_compute_instance" "tf-instance-1" {
+  name         = "tf-instance-1"
+  machine_type = "<EDIT*MACHINE_TYPE*ACCORDINGLY*HERE>"
+  ... (rest of code)
+}
+```
+............................
+TASK 4 #2: Edit the machine type of "tf-instance-2" in `instance.tf`
+```
+resource "google_compute_instance" "tf-instance-2" {
+  name         = "tf-instance-2"
+  machine_type = "<EDIT*MACHINE_TYPE*ACCORDINGLY*HERE>"
+  ... (rest of code)
+}
+```
+............................
+TASK 4 #3: Add following to `instance.tf`
+```
+resource "google_compute_instance" "<FILL*YOUR*INSTANCE_3_NAME*HERE>" {
+  name         = "<FILL*YOUR*INSTANCE_3_NAME*HERE>"
   machine_type = "<FILL*YOUR*MACHINE_TYPE*HERE>"
   zone         = "<FILL*YOUR*ZONE*HERE>"
 
