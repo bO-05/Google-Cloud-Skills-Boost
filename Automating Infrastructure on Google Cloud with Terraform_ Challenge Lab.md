@@ -107,13 +107,9 @@ resource "google_compute_instance" "tf-instance-2" {
 ............................
 TASK 2 #2: Run in cloud shell
 
-```
-terraform import module.instances.google_compute_instance.tf-instance-1 <FILL*YOUR*INSTANCE_ID_#1*HERE>
-
-terraform import module.instances.google_compute_instance.tf-instance-2 <FILL*YOUR*INSTANCE_ID_#2*HERE>
-
-terraform plan && terraform apply
-```
+`terraform import module.instances.google_compute_instance.tf-instance-1 <FILL*YOUR*INSTANCE_ID_#1*HERE>`
+`terraform import module.instances.google_compute_instance.tf-instance-2 <FILL*YOUR*INSTANCE_ID_#2*HERE>`
+`terraform plan && terraform apply`
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ............................
@@ -168,7 +164,7 @@ terraform init
 ............................
 TASK 4 #1-#3: Add following to `instance.tf`
 ```
-resource "google_compute_instance" "<FILL YOUR INSTANCE NAME>" {
+resource "google_compute_instance" "<FILL*YOUR*INSTANCE_NAME*HERE>" {
   name         = "<FILL*YOUR*INSTANCE_NAME*HERE>"
   machine_type = "<FILL*YOUR*MACHINE_TYPE*HERE>"
   zone         = "<FILL*YOUR*ZONE*HERE>"
@@ -198,7 +194,7 @@ terraform init && terraform apply
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 ............................
-TASK 5 #1: Go to instance.tf & remove instance 3
+TASK 5 #1: Go to `instance.tf` & remove instance 3
 
 ............................
 TASK 5 #2: Run cloud shell
