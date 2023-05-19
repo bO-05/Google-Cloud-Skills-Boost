@@ -132,3 +132,7 @@ gcloud compute forwarding-rules create http-content-rule \
 ```
     
 ### Wait 4-5 minutes, then you can check for completion
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### DONE
