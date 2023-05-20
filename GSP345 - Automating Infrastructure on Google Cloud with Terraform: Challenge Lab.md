@@ -1,4 +1,4 @@
-# GSP345 - Automating Infrastructure on Google Cloud with Terraform_ Challenge Lab.md
+# GSP345 - Automating Infrastructure on Google Cloud with Terraform: Challenge Lab.md
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## TASK 1
 
