@@ -1,4 +1,4 @@
-# GSP 303 - Configure Secure RDP using a Windows Bastion Host
+# GSP303 - Configure Secure RDP using a Windows Bastion Host
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Task 1 : A new non-default VPC has been created
 ```
