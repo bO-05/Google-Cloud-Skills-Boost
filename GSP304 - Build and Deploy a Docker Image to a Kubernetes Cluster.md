@@ -1,4 +1,4 @@
-# GSP 304 - Build and Deploy a Docker Image to a Kubernetes Cluster
+# GSP304 - Build and Deploy a Docker Image to a Kubernetes Cluster
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Task 1 : Create a Kubernetes Cluster
