@@ -1,4 +1,4 @@
-# GSP 330 - Implement DevOps in Google Cloud: Challenge Lab
+# GSP330 - Implement DevOps in Google Cloud: Challenge Lab
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Task 1: Create the lab resources
 
