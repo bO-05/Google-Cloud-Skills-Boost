@@ -1,4 +1,4 @@
-GSP318 - Deploy to Kubernetes in Google Cloud: Challenge Lab
+# GSP318 - Deploy to Kubernetes in Google Cloud: Challenge Lab
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Task 1: Create a Docker image and store the Dockerfile
 
