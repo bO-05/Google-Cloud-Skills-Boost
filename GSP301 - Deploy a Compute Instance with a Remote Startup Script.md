@@ -1,4 +1,4 @@
-# GSP 301 - Deploy a Compute Instance with a Remote Startup Script
+# GSP301 - Deploy a Compute Instance with a Remote Startup Script
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Task 1: Check that a Google Cloud Storage bucket exists and contains a file
 ```
