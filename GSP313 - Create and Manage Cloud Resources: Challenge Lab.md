@@ -1,4 +1,4 @@
-# GSP 313 - Create and Manage Cloud Resources: Challenge Lab
+# GSP313 - Create and Manage Cloud Resources: Challenge Lab
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Task 1: Create a project jumphost instance
 
