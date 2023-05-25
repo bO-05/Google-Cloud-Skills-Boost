@@ -307,7 +307,7 @@ from
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Task 10:-  Create a Looker Studio report
+## Task 10: Create a Looker Studio report
 
 Change <START_DATE> and <END_DATE> accordingly.
 
