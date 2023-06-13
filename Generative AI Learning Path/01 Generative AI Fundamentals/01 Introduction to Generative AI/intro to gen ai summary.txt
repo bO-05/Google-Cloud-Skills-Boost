@@ -1,0 +1,9 @@
+Generative AI is a type of artificial intelligence technology that can produce various types of content, including text, imagery, audio, and synthetic data. In this course, you learn to define generative AI, explain how it works, describe Generative AI model types, and describe generative AI applications.
+
+Gen AI is a subset of deep learning which means it uses artificial node networks. It can process both labeled and unlabeled data using supervised, unsupervised, and semi supervised methods. A good way to distinguish what is Gen AI and what is not is shown in this illustration.
+
+Gen AI is a type of artificial intelligence that creates new content based on what it has learned from existing content. When given a prompt, Gen AI uses the model to predict what an expected response might be and this generates new content.
+
+A prompt is a short piece of text that is given to the large language model as input. Prompt is the process of creating a prompt that will generate the desired output from a lower language model. Hallucinations can be a problem for transformers because They can make the output text difficult to understand.
+
+BARD code generation can help you debug your lines of source code. Explain your code to you line by line craft sequel queries for your database, translate code from one language to another. generative AI builder lets you create gen AI apps without having to write any code.

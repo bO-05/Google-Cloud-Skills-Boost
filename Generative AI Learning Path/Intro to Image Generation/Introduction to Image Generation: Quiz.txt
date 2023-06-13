@@ -1,0 +1,14 @@
+Which process involves a model learning to remove noise from images?
+Reverse diffusion
+
+What is the goal of diffusion models?
+To learn the latent structure of a dataset by modeling the way in which data points diffuse through the latent space
+
+What is the process of forward diffusion?
+Start with a clean image and add noise iteratively
+
+What are some challenges of diffusion models?
+All of the above
+
+What is the name of the model family that draws inspiration from physics and thermodynamics?
+Diffusion models
